@@ -4,16 +4,16 @@ using CleverClass.Domain.Contract.Interface;
 using System.Collections.Generic;
 using System.Web.Http;
 
-namespace CleverClass.Domain.Rest
+namespace CleverClass.Domain.Rest.Controller
 {
     [RoutePrefix("api/classgroup")]
     public class ClassGroupController : ApiController, IClassGroupFacade
     {
         private readonly IClassGroupFacade _classGroupFacade;
         
-        public ClassGroupController()
+        public ClassGroupController(IClassGroupFacade classGroupFacade)
         {
-            _classGroupFacade = new ClassGroupFacade();
+            _classGroupFacade = classGroupFacade;
         }
         
         [HttpGet]
@@ -38,7 +38,7 @@ namespace CleverClass.Domain.Rest
         }
         
         [HttpPut]
-        [Route("{id}")]
+        [Route("")]
         public ClassGroupDto Update(ClassGroupDto classGroup)
         {
             return _classGroupFacade.Update(classGroup);

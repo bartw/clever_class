@@ -4,7 +4,7 @@ using CleverClass.Domain.Contract.Interface;
 using System.Collections.Generic;
 using System.Web.Http;
 
-namespace CleverClass.Domain.Rest
+namespace CleverClass.Ui
 {
     [RoutePrefix("api/classgroup")]
     public class ClassGroupController : ApiController
@@ -13,7 +13,7 @@ namespace CleverClass.Domain.Rest
         
         public ClassGroupController()
         {
-            _classGroupClient = new ClassGroupRestClient();
+            _classGroupClient = new ClassGroupRestClient(new System.Uri(""));
         }
         
         [HttpGet]
