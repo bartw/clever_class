@@ -40,6 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client\ClassGroupRestClient.cs" />
+    <Compile Include="Dto\ClassGroupDto.cs" />
+    <Compile Include="Dto\CourseDto.cs" />
+    <Compile Include="Dto\SkillDto.cs" />
+    <Compile Include="Dto\StudentDto.cs" />
+    <Compile Include="Dto\TestDto.cs" />
+    <Compile Include="Dto\TestScoreDto.cs" />
+    <Compile Include="Interface\IClassGroupFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
