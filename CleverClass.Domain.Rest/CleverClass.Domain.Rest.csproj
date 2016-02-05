@@ -86,6 +86,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="ClassGroupController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -102,6 +103,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CleverClass.Domain.Business\CleverClass.Domain.Business.csproj">
+      <Project>{82da8bc0-2689-415d-a3ac-e09cf9e2c929}</Project>
+      <Name>CleverClass.Domain.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CleverClass.Domain.Contract\CleverClass.Domain.Contract.csproj">
+      <Project>{a560a31b-a088-42aa-ad0e-871eb0939264}</Project>
+      <Name>CleverClass.Domain.Contract</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
