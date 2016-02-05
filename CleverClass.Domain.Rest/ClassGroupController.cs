@@ -1,6 +1,6 @@
-using CleverClass.Domain.Contract.Interface;
-using CleverClass.Domain.Contract.Dto;
 using CleverClass.Domain.Business;
+using CleverClass.Domain.Contract.Dto;
+using CleverClass.Domain.Contract.Interface;
 using System.Collections.Generic;
 using System.Web.Http;
 
