@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleverClass.Common", "Cleve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleverClass.Common.Test", "CleverClass.Common.Test\CleverClass.Common.Test.csproj", "{15B62F2B-F109-4BB7-9DF9-85FDDE6BA2C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleverClass.Domain.EndToEndTest", "CleverClass.Domain.EndToEndTest\CleverClass.Domain.EndToEndTest.csproj", "{D37BE271-E323-4E94-B24D-C3BB942BD7A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{15B62F2B-F109-4BB7-9DF9-85FDDE6BA2C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15B62F2B-F109-4BB7-9DF9-85FDDE6BA2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15B62F2B-F109-4BB7-9DF9-85FDDE6BA2C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D37BE271-E323-4E94-B24D-C3BB942BD7A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D37BE271-E323-4E94-B24D-C3BB942BD7A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D37BE271-E323-4E94-B24D-C3BB942BD7A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D37BE271-E323-4E94-B24D-C3BB942BD7A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
