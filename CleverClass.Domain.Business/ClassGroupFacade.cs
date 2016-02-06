@@ -1,24 +1,27 @@
+using CleverClass.Domain.Business.Repository;
 using CleverClass.Domain.Contract.Dto;
 using CleverClass.Domain.Contract.Interface;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CleverClass.Domain.Business
 {
     public class ClassGroupFacade : IClassGroupFacade
     {
+        private readonly IClassGroupRepository _classGroupRepository;
+
+        public ClassGroupFacade(IClassGroupRepository classGroupRepository)
+        {
+            _classGroupRepository = classGroupRepository;
+        }
+
         public IEnumerable<ClassGroupDto> GetAll()
         {
-            return new List<ClassGroupDto>
+            return _classGroupRepository.GetAll().Select(cg => new ClassGroupDto
             {
-                new ClassGroupDto{
-                    Id = 1,
-                    Name = "Bakkers"
-                },
-                new ClassGroupDto{
-                    Id = 2,
-                    Name = "Slagers"
-                }
-            };
+                Id = cg.Id,
+                Name = cg.Name
+            });
         }
         
         public ClassGroupDto Get(int id)

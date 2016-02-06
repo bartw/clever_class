@@ -1,4 +1,5 @@
 ﻿using CleverClass.Common.Test;
+using CleverClass.Domain.Business;
 using CleverClass.Domain.Rest;
 using Microsoft.Practices.Unity;
 using Owin;
@@ -31,6 +32,10 @@ namespace CleverClass.Domain.Test
     }
 
     public interface INeedTestHttpServer : IClassFixture<TestHttpServer<Startup>>
+    {
+    }
+
+    public interface INeedTestDatabase : IClassFixture<TestDatabase<DomainContext>>
     {
     }
 }
