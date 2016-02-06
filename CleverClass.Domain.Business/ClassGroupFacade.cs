@@ -1,3 +1,4 @@
+using CleverClass.Domain.Business.Entity;
 using CleverClass.Domain.Business.Repository;
 using CleverClass.Domain.Contract.Dto;
 using CleverClass.Domain.Contract.Interface;
@@ -26,25 +27,63 @@ namespace CleverClass.Domain.Business
         
         public ClassGroupDto Get(int id)
         {
-            return new ClassGroupDto{
-                Id = id,
-                Name = "Koks"
+            var classGroup = _classGroupRepository.Get(id);
+
+            if (classGroup == null)
+            {
+                return null;
+            }
+
+            return new ClassGroupDto
+            {
+                Id = classGroup.Id,
+                Name = classGroup.Name
             };
         }
         
         public ClassGroupDto Create(ClassGroupDto classGroup)
         {
-            return classGroup;
+            var createdClassGroup = _classGroupRepository.Create(new ClassGroup
+            {
+                Id = classGroup.Id,
+                Name = classGroup.Name
+            });
+
+            if (createdClassGroup == null)
+            {
+                return null;
+            }
+
+            return new ClassGroupDto
+            {
+                Id = createdClassGroup.Id,
+                Name = createdClassGroup.Name
+            };
         }
         
         public ClassGroupDto Update(ClassGroupDto classGroup)
         {
-            return classGroup;
+            var updatedClassGroup = _classGroupRepository.Update(new ClassGroup
+            {
+                Id = classGroup.Id,
+                Name = classGroup.Name
+            });
+
+            if (updatedClassGroup == null)
+            {
+                return null;
+            }
+
+            return new ClassGroupDto
+            {
+                Id = updatedClassGroup.Id,
+                Name = updatedClassGroup.Name
+            };
         }
         
         public void Delete(int id)
         {
-            
+            _classGroupRepository.Delete(id);
         }
     }
 }
