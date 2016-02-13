@@ -5,7 +5,7 @@ using CleverClass.Domain.Business.Repository;
 using System.Linq;
 using Xunit;
 
-namespace CleverClass.Domain.Test
+namespace CleverClass.Domain.Test.Repository
 {
     public class ClassGroupRepositoryTest : INeedTestDatabase
     {

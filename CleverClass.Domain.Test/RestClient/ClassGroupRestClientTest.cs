@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace CleverClass.Domain.Test
+namespace CleverClass.Domain.Test.RestClient
 {
     public class ClassGroupRestClientTest : INeedTestHttpServer
     {

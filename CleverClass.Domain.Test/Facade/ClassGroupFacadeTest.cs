@@ -8,14 +8,14 @@ using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
-namespace CleverClass.Domain.Test
+namespace CleverClass.Domain.Test.Facade
 {
-    public class ClassGroupFacadeTests
+    public class ClassGroupFacadeTest
     {
         private readonly IClassGroupRepository _classGroupRepository;
         private readonly IClassGroupFacade _classGroupFacade;
 
-        public ClassGroupFacadeTests()
+        public ClassGroupFacadeTest()
         {
             _classGroupRepository = Substitute.For<IClassGroupRepository>();
             _classGroupFacade = new ClassGroupFacade(_classGroupRepository);

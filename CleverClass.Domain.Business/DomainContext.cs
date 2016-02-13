@@ -1,18 +1,18 @@
 ﻿using CleverClass.Domain.Business.Entity;
 using Microsoft.Practices.Unity;
-using System;
-using System.Collections.Generic;
 using System.Data.Common;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CleverClass.Domain.Business
 {
     public class DomainContext : DbContext
     {
         public DbSet<ClassGroup> ClassGroups { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Skill> Skills { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Test> Tests { get; set; }
+        public DbSet<TestScore> TestScores { get; set; }
 
         public DomainContext(DbConnection connection, bool connectionIsOwnedByContext)
         {
@@ -30,6 +30,12 @@ namespace CleverClass.Domain.Business
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             ClassGroup.CreateMapping(modelBuilder);
+            Course.CreateMapping(modelBuilder);
+            Skill.CreateMapping(modelBuilder);
+            Student.CreateMapping(modelBuilder);
+            Test.CreateMapping(modelBuilder);
+            TestScore.CreateMapping(modelBuilder);
+
             base.OnModelCreating(modelBuilder);
         }
     }

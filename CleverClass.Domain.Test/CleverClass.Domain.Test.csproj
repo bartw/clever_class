@@ -130,10 +130,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\UnityConfig.cs" />
-    <Compile Include="ClassGroupFacadeTests.cs" />
-    <Compile Include="ClassGroupRepositoryTest.cs" />
-    <Compile Include="ClassGroupRestClientTest.cs" />
+    <Compile Include="Facade\ClassGroupFacadeTest.cs" />
+    <Compile Include="Facade\SkillFacadeTest.cs" />
+    <Compile Include="Facade\StudentFacadeTest.cs" />
+    <Compile Include="Facade\TestFacadeTest.cs" />
+    <Compile Include="Facade\TestScoreFacadeTest.cs" />
+    <Compile Include="Repository\ClassGroupRepositoryTest.cs" />
+    <Compile Include="Repository\CourseRepositoryTest.cs" />
+    <Compile Include="Repository\SkillRepositoryTest.cs" />
+    <Compile Include="Repository\StudentRepositoryTest.cs" />
+    <Compile Include="Repository\TestRepositoryTest.cs" />
+    <Compile Include="Repository\TestScoreRepositoryTest.cs" />
+    <Compile Include="RestClient\ClassGroupRestClientTest.cs" />
+    <Compile Include="Facade\CourseFacadeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RestClient\CourseRestClientTest.cs" />
+    <Compile Include="RestClient\SkillRestClientTest.cs" />
+    <Compile Include="RestClient\StudentRestClientTest.cs" />
+    <Compile Include="RestClient\TestRestClientTest.cs" />
+    <Compile Include="RestClient\TestScoreRestClientTest.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +178,7 @@
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -1,7 +1,6 @@
 ﻿using CleverClass.Domain.Business.Entity;
 using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
 
 namespace CleverClass.Domain.Business.Repository
 {

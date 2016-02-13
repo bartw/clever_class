@@ -68,8 +68,18 @@
     <Compile Include="ClassGroupFacade.cs" />
     <Compile Include="DomainContext.cs" />
     <Compile Include="Entity\ClassGroup.cs" />
+    <Compile Include="Entity\Course.cs" />
+    <Compile Include="Entity\Skill.cs" />
+    <Compile Include="Entity\Student.cs" />
+    <Compile Include="Entity\Test.cs" />
+    <Compile Include="Entity\TestScore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ClassGroupRepository.cs" />
+    <Compile Include="Repository\CourseRepository.cs" />
+    <Compile Include="Repository\SkillRepository.cs" />
+    <Compile Include="Repository\StudentRepository.cs" />
+    <Compile Include="Repository\TestRepository.cs" />
+    <Compile Include="Repository\TestScoreRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CleverClass.Domain.Contract\CleverClass.Domain.Contract.csproj">
