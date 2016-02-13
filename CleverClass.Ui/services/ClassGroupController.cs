@@ -11,9 +11,9 @@ namespace CleverClass.Ui
     {
         private readonly IClassGroupFacade _classGroupClient;
         
-        public ClassGroupController()
+        public ClassGroupController(IClassGroupFacade classGroupClient)
         {
-            _classGroupClient = new ClassGroupRestClient(new System.Uri(""));
+            _classGroupClient = classGroupClient;
         }
         
         [HttpGet]
