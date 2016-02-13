@@ -117,6 +117,10 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controller\ClassGroupController.cs" />
+    <Compile Include="Controller\CourseController.cs" />
+    <Compile Include="Controller\SkillController.cs" />
+    <Compile Include="Controller\StudentController.cs" />
+    <Compile Include="Controller\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

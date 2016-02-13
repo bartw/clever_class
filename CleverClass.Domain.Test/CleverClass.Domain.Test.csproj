@@ -134,7 +134,6 @@
     <Compile Include="Facade\SkillFacadeTest.cs" />
     <Compile Include="Facade\StudentFacadeTest.cs" />
     <Compile Include="Facade\TestFacadeTest.cs" />
-    <Compile Include="Facade\TestScoreFacadeTest.cs" />
     <Compile Include="Repository\ClassGroupRepositoryTest.cs" />
     <Compile Include="Repository\CourseRepositoryTest.cs" />
     <Compile Include="Repository\SkillRepositoryTest.cs" />
@@ -148,7 +147,6 @@
     <Compile Include="RestClient\SkillRestClientTest.cs" />
     <Compile Include="RestClient\StudentRestClientTest.cs" />
     <Compile Include="RestClient\TestRestClientTest.cs" />
-    <Compile Include="RestClient\TestScoreRestClientTest.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>

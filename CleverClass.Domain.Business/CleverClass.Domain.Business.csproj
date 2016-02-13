@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassGroupFacade.cs" />
+    <Compile Include="CourseFacade.cs" />
     <Compile Include="DomainContext.cs" />
     <Compile Include="Entity\ClassGroup.cs" />
     <Compile Include="Entity\Course.cs" />
@@ -80,6 +81,9 @@
     <Compile Include="Repository\StudentRepository.cs" />
     <Compile Include="Repository\TestRepository.cs" />
     <Compile Include="Repository\TestScoreRepository.cs" />
+    <Compile Include="SkillFacade.cs" />
+    <Compile Include="StudentFacade.cs" />
+    <Compile Include="TestFacade.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CleverClass.Domain.Contract\CleverClass.Domain.Contract.csproj">

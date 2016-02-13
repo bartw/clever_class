@@ -41,6 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client\ClassGroupRestClient.cs" />
+    <Compile Include="Client\CourseRestClient.cs" />
+    <Compile Include="Client\SkillRestClient.cs" />
+    <Compile Include="Client\StudentRestClient.cs" />
+    <Compile Include="Client\TestRestClient.cs" />
     <Compile Include="DomainAgent.cs" />
     <Compile Include="Dto\ClassGroupDto.cs" />
     <Compile Include="Dto\CourseDto.cs" />
@@ -49,6 +53,10 @@
     <Compile Include="Dto\TestDto.cs" />
     <Compile Include="Dto\TestScoreDto.cs" />
     <Compile Include="Interface\IClassGroupFacade.cs" />
+    <Compile Include="Interface\ICourseFacade.cs" />
+    <Compile Include="Interface\ISkillFacade.cs" />
+    <Compile Include="Interface\IStudentFacade.cs" />
+    <Compile Include="Interface\ITestFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
