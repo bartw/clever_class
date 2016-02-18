@@ -1,0 +1,12 @@
+{
+  "name": "cleverclass",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Bart Wijnants",
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "angular": "^1.5.0"
+  }
+}

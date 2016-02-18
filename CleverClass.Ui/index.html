@@ -1,10 +1,18 @@
 ﻿<!DOCTYPE html>
-<html>
+<html data-ng-app="app">
 <head>
     <title>CleverClass</title>
 	<meta charset="utf-8" />
 </head>
 <body>
-    <h1>CleverClass</h1>
+    <div data-ng-include="'src/layout/shell.html'"></div>
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/src/app.module.js"></script>
+    <script src="/src/layout/layout.module.js"></script>
+    <script src="/src/layout/shell.controller.js"></script>
+    <script src="/src/classGroup/classGroup.module.js"></script>
+    <script src="/src/classGroup/classGroup.list.controller.js"></script>
+    <script src="/src/classGroup/classGroup.edit.controller.js"></script>
+    <script src="/src/classGroup/classGroup.details.controller.js"></script>
 </body>
 </html>
