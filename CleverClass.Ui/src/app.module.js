@@ -1,10 +1,9 @@
-﻿(function () {
-    'use strict';
+﻿'use strict';
 
-    angular.module('app', [
-        'ngResource',
-        'app.core',
-        'app.layout',
-        'app.classGroup'
-    ]);
-})();
+require('angular').module('app', [
+    require('angular-resource')
+]);
+
+require('./core/core.module');
+require('./layout/layout.module');
+require('./classGroup/classGroup.module')

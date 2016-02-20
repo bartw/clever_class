@@ -5,8 +5,14 @@
   "author": "Bart Wijnants",
   "license": "ISC",
   "devDependencies": {
+    "browserify": "^13.0.0",
+    "watchify": "^3.7.0"
   },
   "dependencies": {
     "angular": "^1.5.0"
+  },
+  "scripts": {
+    "build-js": "browserify src/app.module.js -o app/app.js",
+    "watch-js": "watchify src/app.module.js -o app/app.js"
   }
 }

@@ -1,5 +1,6 @@
-﻿(function () {
-    'use strict';
+﻿'use strict';
 
-    angular.module('app.classGroup', []);
-})();
+require('angular').module('app')
+    .controller('ClassGroupListController', require('./classGroup.list.controller'))
+    .controller('ClassGroupEditController', require('./classGroup.edit.controller'))
+    .controller('ClassGroupDetailsController', require('./classGroup.details.controller'));

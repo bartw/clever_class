@@ -1,19 +1,13 @@
-﻿(function () {
-    'use strict';
+﻿'use strict';
 
-    angular
-        .module('app.classGroup')
-        .controller('ClassGroupDetailsController', ClassGroupDetailsController);
+module.exports = function ClassGroupDetailsController(ClassGroup) {
+    var vm = this;
 
-    function ClassGroupDetailsController(ClassGroup) {
-        var vm = this;
+    vm.classGroup = {};
 
-        vm.classGroup = {};
+    getClassGroup();
 
-        getClassGroup();
-
-        function getClassGroup() {
-            vm.classGroup = ClassGroup.get({ id: 5 });
-        }
-    };
-})();
+    function getClassGroup() {
+        vm.classGroup = ClassGroup.get({ id: 5 });
+    }
+};

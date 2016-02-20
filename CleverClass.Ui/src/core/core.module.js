@@ -1,5 +1,4 @@
-﻿(function () {
-    'use strict';
+﻿'use strict';
 
-    angular.module('app.core', []);
-})();
+require('angular').module('app')
+    .factory('ClassGroup', require('./classGroupService'));

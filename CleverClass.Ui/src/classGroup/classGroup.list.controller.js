@@ -1,29 +1,23 @@
-﻿(function () {
-    'use strict';
+﻿'use strict';
 
-    angular
-        .module('app.classGroup')
-        .controller('ClassGroupListController', ClassGroupListController);
+module.exports = function ClassGroupListController(ClassGroup) {
+    var vm = this;
 
-    function ClassGroupListController(ClassGroup) {
-        var vm = this;
+    vm.classGroups = [];
+    vm.delete = deleteClassGroup;
 
-        vm.classGroups = [];
-        vm.delete = deleteClassGroup;
+    getClassGroups();
 
-        getClassGroups();
+    function getClassGroups() {
+        vm.classGroups = ClassGroup.query();
+    }
 
-        function getClassGroups() {
-            vm.classGroups = ClassGroup.query();
-        }
-
-        function deleteClassGroup(id) {
-            ClassGroup.delete({ id: id })
-                .then(function () {
-                    alert("deleted");
-                }).catch(function () {
-                    alert("something went wrong");
-                });
-        }
-    };
-})();
+    function deleteClassGroup(id) {
+        ClassGroup.delete({ id: id })
+            .then(function () {
+                alert("deleted");
+            }).catch(function () {
+                alert("something went wrong");
+            });
+    }
+};

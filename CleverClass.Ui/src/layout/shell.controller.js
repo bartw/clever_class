@@ -1,13 +1,7 @@
-﻿(function () {
-    'use strict';
+﻿'use strict';
 
-    angular
-        .module('app.layout')
-        .controller('ShellController', ShellController);
+module.exports = function ShellController() {
+    var vm = this;
 
-    function ShellController() {
-        var vm = this;
-
-        vm.title = "CleverClass";
-    };
-})();
+    vm.title = "CleverClass";
+};

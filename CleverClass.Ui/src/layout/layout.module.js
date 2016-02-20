@@ -1,5 +1,4 @@
-﻿(function () {
-    'use strict';
+﻿'use strict';
 
-    angular.module('app.layout', []);
-})();
+require('angular').module('app')
+    .controller('ShellController', require('./shell.controller.js'));
