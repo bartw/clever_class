@@ -1,3 +1,8 @@
 ﻿<div data-ng-controller="ClassGroupListController as classGroupListController">
-    list
+    <ul>
+        <li data-ng-repeat="classGroup in classGroupListController.classGroups">
+            <span>{{classGroup.Name}}</span>
+            <input type="button" value="delete" data-ng-click="classGroupListController.delete(classGroup.Id)"/>
+        </li>
+    </ul>
 </div>

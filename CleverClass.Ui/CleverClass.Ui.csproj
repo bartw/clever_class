@@ -112,10 +112,11 @@
     <Content Include="src\classGroup\classGroup.list.controller.js" />
     <Content Include="src\classGroup\classGroup.list.html" />
     <Content Include="src\classGroup\classGroup.module.js" />
+    <Content Include="src\core\core.module.js" />
     <Content Include="src\layout\layout.module.js" />
     <Content Include="src\layout\shell.controller.js" />
     <Content Include="src\layout\shell.html" />
-    <Content Include="src\services\classGroup.service.js" />
+    <Content Include="src\core\classGroupService.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
